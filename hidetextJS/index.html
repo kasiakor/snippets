@@ -1,15 +1,26 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title></title>
+		<title>Hide/show with Javascript</title>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-		<link rel="stylesheet" type="text/css" href="style.css">
+		<script type="text/javascript">
+			function myFunction(id) {
+				var listHide = document.getElementById("list");
+				if(listHide.style.display == "none") {
+					listHide.style.display = "block";
+				}
+				else {
+					listHide.style.display = "none";
+				}
+			}
+		</script>
 		
 	</head>
 	<body>
 		<ul>
-			<li>first
-				<ul class="list">
+			<button onclick="myFunction('list');">first</button>
+
+				<ul id="list">
 					<li>
 						KAHKAJLAKKA
 					</li>
@@ -20,9 +31,9 @@
 						DFHDHGDFHG
 					</li>
 				</ul>
-			</li>
 			
-			<li>second
+			
+			<!--<li>second
 				<ul class="list">
 					<li>
 						KAHKAJLAKKA
@@ -47,10 +58,8 @@
 						DFHDHGDFHG
 					</li>
 				</ul>
-			</li>
+			</li>-->
 		</ul>
-
-		<script type="text/javascript" src="script.js"></script>
 	</body>
 </html>
 
