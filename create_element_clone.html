@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+        <style>
+          
+        </style>
+    </head>
+    <body>
+        <p id="myP">Paragraph to clone</p>
+        <script>
+            $( document ).ready(function() {
+                $("#myP").clone(true).appendTo("body");
+            });
+        </script>
+    </body>
+</html>
