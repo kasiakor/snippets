@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+        <style>
+            .box {
+                width: 100px;
+                height: 100px;
+                background-color: blueviolet;
+            }
+        </style>
+    </head>
+    <body>
+         <div class="box"></div>
+        <script>
+            $( document ).ready(function() {
+                $(".box").slideUp (4000, function(){
+                    $(this).remove();
+                })
+                
+            });
+        </script>
+    </body>
+</html>
